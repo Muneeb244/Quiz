@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="heading">Wel</div>
+    <div class="main">
+        <button class="start">Start Quiz</button>
+    </div>
+
+    <div class="info">
+        <div class="title">Rules for this Quiz</div>
+        <div class="rules">
+            <ul>
+                <li class="list">1. Each question will be of <span>15 minutes</span> duration.</li>
+                <li class="list">2. Four options will be given for one question.</li>
+                <li class="list">3. Total 10 questions are included in this quiz.</li>
+                <li class="list">4. Obtained marks will be shown at the end.</li>
+            </ul>
+        </div>
+        <div class="info-buttons">
+            <button class="info-btn info-exit">
+                Back
+            </button>
+            <button class="info-btn info-con">
+                Continue
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="question">
+        <div class="index">
+            <div class="ques-state">
+                <span>Question #</span>
+                <span id = 'ques-no'>1</span>
+            </div>
+            <div class="time">
+                Time left: <span id = 'sec'>15</span>
+            </div>
+        </div>
+        <div class="quiz-section">
+            <h2 class="ques">What is html?</h2>
+            <ul>
+                <li class="options">
+                    <!-- web -->
+                    <!-- <i class="fa fa-check-circle" style="color:green"></i> -->
+                </li>
+                <li class="options">
+                    <!-- mobile -->
+                    <!-- <i class="fa fa-times-circle" style="color:red"></i> -->
+                </li>
+                <li class="options">
+                    <!-- Embedded -->
+                </li>
+                <li class="options">
+                    <!-- hacking -->
+                </li>
+            </ul>
+        </div>
+        <div class="next">
+            <div class = 'remaining'>
+                <span id = "left">1</span>
+                <span>of</span>
+                <span class="total-ques"></span>
+                <span>Questions</span>
+            </div>
+            <button class="next-btn">Next Question</button>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="crown">
+            <h2>Congratulations!!!</h2>
+        </div>
+        <div class="text">
+            You have completed your quiz.<br>You got <span id = 'obtained'>0</span> out of
+            <span class = 'total-ques'></span> marks
+        </div>
+        <div class="end-buttons">
+            <button class="info-btn info-exit exit-quiz">Exit Quiz</button>
+            <button class="next-btn res">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
